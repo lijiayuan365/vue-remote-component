@@ -11,6 +11,7 @@
     "type-check": "vue-tsc --build"
   },
   "dependencies": {
+    "vant": "^4.9.16",
     "vue": "^3.5.13",
     "vue-router": "^4.4.5"
   },
