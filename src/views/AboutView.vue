@@ -7,11 +7,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, shallowRef } from 'vue';
 import { getComponent } from '@/utils';
 
-const remoteImgCom = ref(null)
-const remoteDemoCom = ref(null)
+const remoteImgCom = shallowRef()
+const remoteDemoCom = shallowRef()
 
 const init = async () => {
   // const demo = await getComponent('https://web.my91app.com/web/remote-components/Demo.vue');

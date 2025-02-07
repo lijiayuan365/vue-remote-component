@@ -1,4 +1,5 @@
 import * as Vue from 'vue';
+import * as Lodash from 'lodash-es'
 
 // @ts-ignore
 const { loadModule } = window['vue3-sfc-loader'];
@@ -7,6 +8,7 @@ const getComponent = async (componentUrl: string) => {
     const component = await loadModule(componentUrl, {
       moduleCache: {
         vue: Vue,
+        'lodash-es': Lodash,
       },
       async getFile(url: string) {
         const res = await fetch(url);

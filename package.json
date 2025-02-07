@@ -11,6 +11,8 @@
     "type-check": "vue-tsc --build"
   },
   "dependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "lodash-es": "^4.17.21",
     "vant": "^4.9.16",
     "vue": "^3.5.13",
     "vue-router": "^4.4.5"

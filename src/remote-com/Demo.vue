@@ -5,6 +5,7 @@
   </div>
 </template>
 <script setup lang="ts">
+import { throttle } from 'lodash-es'
 const props = defineProps<{
   name: {
     type: String,
@@ -18,6 +19,8 @@ const emit = defineEmits(['update:name'])
 const handleClick = () => {
   emit('update:name', 'John')
 }
+
+console.log('throttle', throttle)
 </script>
 <style scoped>
 .demo {
