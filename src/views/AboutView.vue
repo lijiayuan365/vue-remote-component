@@ -14,9 +14,8 @@ const remoteImgCom = shallowRef()
 const remoteDemoCom = shallowRef()
 
 const init = async () => {
-  // const demo = await getComponent('https://web.my91app.com/web/remote-components/Demo.vue');
-  remoteImgCom.value = await getComponent('https://web.my91app.com/web/remote-components/Image.vue');
-  remoteDemoCom.value = await getComponent('https://web.my91app.com/web/remote-components/Demo.vue');
+  remoteImgCom.value = await getComponent('http://oss.lijiayuan.top/project/vue-remote-components/Image.vue');
+  remoteDemoCom.value = await getComponent('http://oss.lijiayuan.top/project/vue-remote-components/Demo.vue');
   console.log(remoteImgCom.value);
 }
 init()

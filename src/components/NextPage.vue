@@ -54,7 +54,7 @@ const props = withDefaults(
     title: string;
   }>(),
   {
-    src: 'https://web.my91app.com/web/remote-components/Image.vue',
+    src: 'http://oss.lijiayuan.top/project/vue-remote-components/Image.vue',
     title: '标题',
   }
 );
